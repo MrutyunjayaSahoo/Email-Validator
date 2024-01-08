@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(5, 157, 187);
+    color: azure;
+
+}
+
+.logo {}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    margin: 6px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(139, 47, 205);
+}
+
+main {
+    min-height: 85.5vh;
+    padding: 13px;
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    /* padding: 8px; */
+}
+
+.container h1 {
+    padding: 12px 0;
+}
+
+.container .inpem {
+    background-color: rgba(14, 155, 183, 0.759);
+    color: white;
+    border: 2px solid rgba(128, 128, 128, 0.682);
+    border-radius: 7px;
+    padding: 8px;
+
+}
+
+.btn {
+    margin-left: 150px;
+    cursor: pointer;
+    background-color: rgba(14, 155, 183, 0.759);
+    padding: 8px;
+    color: white;
+    border: 2px solid rgba(94, 94, 94, 0.705);
+    border-radius: 9px;
+    text-shadow: 2.4px 1px 2px rgb(0, 0, 0);
+    box-shadow: 2px 2px 6px 1px rgb(52, 52, 52);
+}
+
+.container input[type="text"] {
+    min-width: 25vw;
+}
+
+/* to capitalize letters */
+#resultcont div::first-letter {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+footer {
+    background: #282727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding: 12px;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 5px 0;
+    }
+   
+}
