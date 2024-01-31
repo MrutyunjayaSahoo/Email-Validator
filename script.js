@@ -44,7 +44,7 @@ displayStoredEmails();
   let url = `https://api.emailvalidation.io/v1/info?apikey=${key}&email=${email}`;
 
   let res = await fetch(url);
-  let result = await res.json();
+  let result = await res.json();//json
 
   // to display in textual form
   let str = ``;
